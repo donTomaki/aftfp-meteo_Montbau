@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:com.aftfp.tools.tools="http://schemas.android.com/com.aftfp.tools.tools"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    com.aftfp.tools.tools:context=".CurrentWeatherActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:weightSum="6"
+            android:orientation="horizontal"
+            android:baselineAligned="true"
+            >
+            <android.support.v7.widget.AppCompatImageView
+                app:srcCompat="@drawable/ic_thermometer"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/text_temperatura"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/value_zero"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="32dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_temp_min"
+                    android:text="@string/w_temp_min"
+                    />
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_temp_max"
+                    android:text="@string/w_temp_max"
+                    />
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_temp_tend"
+                    android:text="@string/w_temp_tend"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:weightSum="6"
+        android:orientation="horizontal"
+        android:baselineAligned="true"
+        >
+        <android.support.v7.widget.AppCompatImageView
+            app:srcCompat="@drawable/ic_drop"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:id="@+id/text_humedad"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/value_zero"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="32dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_humedad_min"
+                android:text="@string/w_humedad_min"
+                />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_humedad_max"
+                android:text="@string/w_humedad_max"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:weightSum="6"
+            android:orientation="horizontal"
+            android:baselineAligned="true"
+            >
+            <android.support.v7.widget.AppCompatImageView
+                app:srcCompat="@drawable/wind_flag"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:id="@+id/text_viento_velocidad"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/value_zero"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="32dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_viento_componente"
+                    android:text="@string/w_viento_componente"
+                    />
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_viento_avg_10"
+                    android:text="@string/w_viento_avg_10"
+                    />
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_viento_max_avg_10"
+                    android:text="@string/w_viento_avg_max_10"
+                    />
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_viento_max_rafaga_avg_10"
+                    android:text="@string/w_viento_rafaga_max_last_10"
+                    />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_viento_max_rafaga_10"
+                    android:text="@string/w_viento_rafaga_max"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:weightSum="6"
+            android:orientation="horizontal"
+            android:baselineAligned="true"
+            >
+            <android.support.v7.widget.AppCompatImageView
+                app:srcCompat="@drawable/rain"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:id="@+id/text_llvuia"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/value_zero"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="32sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_lluvia_last"
+                    android:text="@string/w_lluvia_last_day"
+                    />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        >
+        <ImageButton
+            android:id="@+id/btn_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/w_temp"
+            android:src="@drawable/ic_refresh_black_24dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/label_lastSyncro"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/w_last_syncro" />
+
+            <TextView
+                android:id="@+id/text_lastSyncro"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/value_zero" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

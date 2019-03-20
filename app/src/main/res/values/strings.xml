@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Montbau Meteo</string>
+
+    <string name="w_temp">Temperatura: </string>
+    <string name="w_temp_max">45º a las 12:00</string>
+    <string name="w_temp_min">-45º a las 12:00</string>
+    <string name="w_temp_tend">Estable: -0.1 C/h</string>
+
+    <string name="w_humedad">Humitat: </string>
+    <string name="w_humedad_min">Mínimo 49% a las 6:00</string>
+    <string name="w_humedad_max">Máximo 99% a las 16:00</string>
+
+    <string name="w_viento_velocidad">Velocitat del vent: </string>
+    <string name="w_viento_avg_10">Avg. 10': 99 Km/h  </string>
+    <string name="w_viento_avg_max_10">Max.Avg. 10': 99 Km/h  </string>
+    <string name="w_viento_rafaga_max_last_10">Rafaga Max. Last. 10': 99 Km/h  </string>
+    <string name="w_viento_rafaga_max">Max.: 99 Km/h  a las 20.30 </string>
+    <string name="w_viento_componente">256 WMW  </string>
+
+    <string name="w_lluvia">Pluja: </string>
+    <string name="w_lluvia_last_day">Últim dia: 1 de Febrer 23:45</string>
+    <string name="value_zero">0</string>
+    <string name="w_last_syncro">Última sincronització: </string>
+    <string name="appwidget_text">Meteo Montbau Widget</string>
+    <string name="add_widget">Add widget</string>
+</resources>
